@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    tools:context="Login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginLeft="10dp">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp">
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+
+            android:layout_marginLeft="5dp"
+            android:text="Đăng nhập"
+            android:textColor="#707070"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="301dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/coffehouse"></ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="301dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_bg"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawableLeft="@drawable/ic_user"
+                    android:drawablePadding="6dp"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress|text"
+                    android:padding="15dp"></EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorView"></View>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_lock_alt"
+                    android:drawableLeft="@drawable/ic_lock_alt"
+                    android:drawablePadding="6dp"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="15dp"></EditText>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/reg_btn"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/reg_btn"></ImageView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_login"
+            android:layout_width="158dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="230dp"
+            android:layout_marginLeft="230dp"
+            android:src="@drawable/btn"></ImageView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
